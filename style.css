@@ -1,0 +1,24 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+}
+
+.screen{
+    border: 5px solid black;
+    width: 400px;
+    height: 700px;
+    background-color: aqua;
+}
+
+#container{
+    border: 5px solid black;
+    margin: 10%;
+    padding: 5%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+
