@@ -11,36 +11,40 @@
 </head>
 <body>
 
-    <header class="logoHeadAlq">
+    <header class="logoHeadChico">
         <img src="../archivos/Entre Verdes IsoLogo.png" alt="">
     </header>
     
-    <a href="./alquilerFotos.html">
+    <a href="./filtroAlquiler.html">
         <div  class="backButon">
             <h2><</h2>
         </div>
     </a>
 
+    <h2 class="tag">Cabaña del Bosque</h2>
     <h2 class="tag">Ingresá tus datos</h2>
 
     <form action="" class="formulario">
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Apellido">
-        <input type="tel" placeholder="Teléfono">
-        <label for="">Dias de Alquiler</label>
-        <input type="number" class="contador" id="contadorDiasHosp">
-        <input type="email" placeholder="Email">
+        <input name="nombre" type="text" placeholder="Nombre" id="nombre">
+        <input name="apellido" type="text" placeholder="Apellido" id="apellido">
+        <input name="telefono" type="tel" placeholder="Teléfono" id="telefono">
+        <label name="" for="">Dias de Alquiler</label>
+        <input name="contadorDiasHosp" type="number" class="contador" id="contadorDiasHosp">
+        <input name="email" type="email" placeholder="Email" id="email">
         <div class="mascota">
             <p>Venís con tu mascota?</p>
             Si<input type="radio" name="radioMascota" value="mascotaSi">
 
             No<input type="radio" name="radioMascota" value="mascotaNo">
-        </div>        
-        <a href="" id="botonSumbit" class="botonSubmit">
-            <div id="submitBosque">
-                <h2>Enviar</h2>
-            </div>
-        </a>        
+        </div>
+        
+        <div class="boton botonSubmit" id="submitAsequia">
+            <h2>Enviar</h2>
+        </div>
+        <div class="boton botonLimpiar" id="limpiarFormu">
+            <h2>Limpiar</h2>
+        </div>
+               
     </form>
     
     <footer class="footer">
@@ -53,6 +57,7 @@
         </ol>
     </footer>
     
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/formuBosque.js"></script>
 </body>
 </html>
