@@ -24,6 +24,7 @@ function crearReserva(){
     /* e.preventDefault(); */
     for(const cabana of cabanaElegida){
         let cardReserva = document.createElement("div");
+        cardReserva.classList.add("cardReserva")
         cardReserva.innerHTML = `<h2>Cabaña ${cabana.nombre}</h2>
         <p>A nombre de: ${inputNombre.value} ${apellido.value}</p>
         <p>Telefono: ${inputTelefono.value}</p>
@@ -31,8 +32,7 @@ function crearReserva(){
         <p>Capacidad: ${cabana.capacidad} personas</p>
         <p>Precio por dia: $${cabana.precio}<p/>
         <p>Cantidad de días: ${JSON.parse(inputCantDias.value)}<p/>
-        <p>Precio estadía: $${cabana.precio * JSON.parse(inputCantDias.value)}<p/>
-        <p>______________<p>`;
+        <p>Precio estadía: $${cabana.precio * JSON.parse(inputCantDias.value)}<p/>`;
         
         document.body.append(cardReserva);
     }

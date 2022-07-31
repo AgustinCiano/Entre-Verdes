@@ -9,374 +9,404 @@
 }
 
 
-
-
-body{
-    width: auto; 
-    max-width: 700px;
-    height: auto;
-    max-height: 1400px;
+@media only screen and (min-width: 360px){
+    body{
+        width: auto; 
+        max-width: 700px;
+        height: auto;
+        max-height: 1400px;
+        
+        /* border: 5px solid rgb(64, 166, 41); */
+        border-radius: 50px;
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
     
-    border: 5px solid rgb(64, 166, 41);
-    border-radius: 50px;
-    margin-top: 1%;
-    margin-bottom: 5%;
-}
-
-
-
-.logoHead img{
-    margin: 8% 0 5% 0;
-    width: 40%;
-}
-
-.logoHead{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    transform-origin: center;
-}
-
-.backButon{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(254, 166, 33);
-    border-radius: 50px;  
-    display: flex;
-
-    position: inherit;
-    margin: 10px 0 0 10px;
-
-    transition: 200ms;
-    transition-timing-function: ease-in;
-}
-
-.backButon h2{
-    color: white;
-    font-size: 45px;    
-}
-
-.backButon:hover{
-    background-color: rgb(64, 166, 41);
-    transition: 400ms;
-    transition-timing-function: ease-out;
-}
-
-
-.botonIndex{
-    border-radius: 20px;    
-    width: 200px;
-    height: 80px;
-    background-color: rgb(254, 166, 33);
-    transform-origin: 50%;
     
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;   
-    color: white;  
-    transition: 200ms;
-    transition-timing-function: ease-out;
-}
-
-.botonesIndex a div{
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-
-.botonIndex:hover{
-    background-color: rgb(64, 166, 41);
-    transition: 400ms;
-    transition-timing-function: ease-out;
-    color: white;
-    transform-origin: 50%;
-}
-
-.botonQs{
-    font-size: 35px;
-    text-align: center;
-    transform-origin: 50%;
-    transition: 200ms;
-    transition-timing-function: ease-out;
-}
-
-.botonQs:hover{
-    background-color: rgb(64, 166, 41);
-    transition: 400ms;
-    transition-timing-function: ease-out;
-    transform-origin: 50%;
-}
-
-
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 60px; 
-     
-    bottom: 0; 
-    z-index:999999;
-    border-top: 5px solid rgb(64, 166, 41);
-
-}
-
-
-
-
-/* ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  */
-
-/* ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  */
-
-
-
-
-.logoHeadChico img{
-    width: 20%;
-    margin: 5% 0 2% 0;
-}
-
-.logoHeadChico{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    transform-origin: center;
-}
-
-.tag{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     
-    margin: 0% auto 5% auto;
-
-    font-size: 40px;
-}
-
-.botonFiltroAlq{
-    border-radius: 20px;    
-    width: 200px;
-    height: 80px;
-    background-color: rgb(254, 166, 33);
-    transform-origin: 50%;
+    .logoHead img{
+        margin: 8% 0 5% 0;
+        width: 40%;
+    }
     
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;   
-    color: white;  
-    transition: 200ms;
-    transition-timing-function: ease-out;
-}
-
-.botonFiltroAlq{
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-
-.botonFiltroAlq:hover{
-    background-color: rgb(64, 166, 41);
-    transition: 400ms;
-    transition-timing-function: ease-out;
-    color: white;
-    transform-origin: 50%;
-}
-
-
-
-
-
-.card a{
-    width: 80%;
-    height: 200px;
-    border-radius: 20px;
-    margin: 0 auto 30px auto;
-    background-color: rgb(254, 166, 33);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-decoration: none;    
-}
-
-.card a img{
-    width: 50%;
+    .logoHead{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        transform-origin: center;
+    }
     
-    object-fit: cover;
-    border-radius: 20px;  
-}
-
-.card a h2{
-    color: black;
-    font-size: 40px;
-}
-
-
-.infoCabana{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    .backButon{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(254, 166, 33);
+        border-radius: 50px;  
+        display: flex;
     
-}
-
-
-/* .cardBosque a{
-    width: 300px;
-    height: 350px;
-    border-radius: 20px;
-    margin: 0 auto 30px auto;
-    background-color: rgb(254, 166, 33);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-decoration: none;    
-}
-
-.cardBosque a img{
-    width: 280px;
-    border-radius: 20px;  
-}
-
-.cardBosque a h2{
-    color: black;
-    font-size: 40px;
-}
-
-
-.cardMirador a{
-    width: 300px;
-    height: 350px;
-    border-radius: 20px;
-    margin: 0 auto 30px auto;
-    background-color: rgb(254, 166, 33);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-decoration: none;    
-}
-
-.cardMirador a img{
-    width: 280px;
-    border-radius: 20px;  
-}
-
-.cardMirador a h2{
-    color: black;
-    font-size: 40px;
-} */
-
-
-
-.infoCabana{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: black;
+        position: inherit;
+        margin: 10px 0 0 10px;
     
+        transition: 200ms;
+        transition-timing-function: ease-in;
+    }
+    
+    .backButon h2{
+        color: white;
+        font-size: 45px;    
+    }
+    
+    .backButon:hover{
+        background-color: rgb(64, 166, 41);
+        transition: 400ms;
+        transition-timing-function: ease-out;
+    }
+    
+    
+    .botonIndex{
+        border-radius: 20px;    
+        width: 200px;
+        height: 80px;
+        background-color: rgb(254, 166, 33);
+        transform-origin: 50%;
+        
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;   
+        color: white;  
+        transition: 200ms;
+        transition-timing-function: ease-out;
+    }
+    
+    .botonesIndex a div{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    
+    .botonIndex:hover{
+        background-color: rgb(64, 166, 41);
+        transition: 400ms;
+        transition-timing-function: ease-out;
+        color: white;
+        transform-origin: 50%;
+    }
+    
+    .botonQs{
+        font-size: 35px;
+        text-align: center;
+        transform-origin: 50%;
+        transition: 200ms;
+        transition-timing-function: ease-out;
+    }
+    
+    .botonQs:hover{
+        background-color: rgb(64, 166, 41);
+        transition: 400ms;
+        transition-timing-function: ease-out;
+        transform-origin: 50%;
+    }
+    
+    
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 60px; 
+         
+        bottom: 0; 
+        z-index:999999;
+        border-top: 5px solid rgb(64, 166, 41);
+    
+    }
+    
+    
+    
+    
+    /* ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  */
+    
+    /* ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  */
+    
+    
+    
+    
+    .logoHeadChico img{
+        width: 20%;
+        margin: 5% 0 2% 0;
+    }
+    
+    .logoHeadChico{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        transform-origin: center;
+    }
+    
+    .tag{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin: 0% auto 5% auto;
+    
+        font-size: 40px;
+    }
+    
+    .botonFiltroAlq{
+        border-radius: 20px;    
+        width: 200px;
+        height: 80px;
+        background-color: rgb(254, 166, 33);
+        transform-origin: 50%;
+        
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;   
+        color: white;  
+        transition: 200ms;
+        transition-timing-function: ease-out;
+    }
+    
+    .botonFiltroAlq{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    
+    .botonFiltroAlq:hover{
+        background-color: rgb(64, 166, 41);
+        transition: 400ms;
+        transition-timing-function: ease-out;
+        color: white;
+        transform-origin: 50%;
+    }
+    
+    
+    
+    
+    
+    .card a{
+        width: 80%;
+        height: 15rem;
+        border-radius: 20px;
+        margin: 0 auto 30px auto;
+        background-color: rgb(254, 166, 33);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-decoration: none;    
+    }
+    
+    .card a img{
+        width: 40%;
+        height: 80%;
+        
+        object-fit: cover;
+        border-radius: 20px;  
+    }
+    
+    .card a h2{
+        color: black;
+        font-size: 40px;
+        margin-left: 0;
+    }
+    
+    
+    .infoCabana{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+        
+    }
+    .infoCabana li{
+        margin: 5% 0% 1% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: x-large;
+        
+        
+    }
+    
+    
+    /* .cardBosque a{
+        width: 300px;
+        height: 350px;
+        border-radius: 20px;
+        margin: 0 auto 30px auto;
+        background-color: rgb(254, 166, 33);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-decoration: none;    
+    }
+    
+    .cardBosque a img{
+        width: 280px;
+        border-radius: 20px;  
+    }
+    
+    .cardBosque a h2{
+        color: black;
+        font-size: 40px;
+    }
+    
+    
+    .cardMirador a{
+        width: 300px;
+        height: 350px;
+        border-radius: 20px;
+        margin: 0 auto 30px auto;
+        background-color: rgb(254, 166, 33);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-decoration: none;    
+    }
+    
+    .cardMirador a img{
+        width: 280px;
+        border-radius: 20px;  
+    }
+    
+    .cardMirador a h2{
+        color: black;
+        font-size: 40px;
+    } */
+    
+    
+    
+    .infoCabana{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        color: black;
+        
+    }
+    
+    
+    
+    
+    
+    /* FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  */
+    /* FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  */
+    
+    
+    .formulario{
+        width: 300px;
+        height: 520px;
+        border-radius: 20px;
+        margin: 5% auto 30px auto;
+        background-color: rgb(254, 166, 33);
+    
+        display: flex;
+        flex-direction: column;
+    
+        font-size: 20px;
+    
+    }
+    
+    .botonSubmit{    
+        border-radius: 10px;    
+        width: 120px;
+        height: 60px;
+        background-color: rgb(64, 166, 41);
+        transform-origin: 50%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;   
+        color: white;  
+        transition: 200ms;
+        transition-timing-function: ease-out;
+        margin: 5% auto 5%;
+    }
+    .botonLimpiar{    
+        border-radius: 10px;    
+        width: 90px;
+        height: 40px;
+        background-color: rgb(255, 69, 69);
+        transform-origin: 50%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;   
+        color: white;  
+        transition: 200ms;
+        transition-timing-function: ease-out;
+        margin: 0 auto 5%;
+    }
+    
+    .mascota input{
+        margin-right: 20%;
+        margin-left: 2%;
+    }
+    
+    .formulario input{
+        margin-bottom: 5%;    
+    }
+    
+    
+    input[type='radio']{
+        accent-color: rgb(64, 166, 41);
+    }
+    
+    
+    .contador{
+        width: 20%;
+        height: 50px;
+        font-size: 40px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        text-align: center;
+    }
+    
+    
+    
+    .boton{
+        cursor: pointer;    
+    }
+    
+    .cardReserva{
+        padding: 4%;
+        margin-bottom: 2%;
+        background-color: rgb(64, 166, 41);
+        width: 60%;
+    
+        border-radius: 20px;
+        color: white;
+        
+    }
+    
+    .headReservas{
+        background-color: rgb(64, 166, 41);
+        width: 80%;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: white;
+        display: flex;
+        font-size: 150%;
+    }
 }
 
-
-
-
-
-/* FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  */
-/* FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  */
-
-
-.formulario{
-    width: 300px;
-    height: 520px;
-    border-radius: 20px;
-    margin: 5% auto 30px auto;
-    background-color: rgb(254, 166, 33);
-
-    display: flex;
-    flex-direction: column;
-
-    font-size: 20px;
-
-}
-
-.botonSubmit{    
-    border-radius: 10px;    
-    width: 120px;
-    height: 60px;
-    background-color: rgb(64, 166, 41);
-    transform-origin: 50%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;   
-    color: white;  
-    transition: 200ms;
-    transition-timing-function: ease-out;
-    margin: 5% auto 5%;
-}
-.botonLimpiar{    
-    border-radius: 10px;    
-    width: 90px;
-    height: 40px;
-    background-color: rgb(255, 69, 69);
-    transform-origin: 50%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;   
-    color: white;  
-    transition: 200ms;
-    transition-timing-function: ease-out;
-    margin: 0 auto 5%;
-}
-
-.mascota input{
-    margin-right: 20%;
-    margin-left: 2%;
-}
-
-.formulario input{
-    margin-bottom: 5%;    
-}
-
-
-input[type='radio']{
-    accent-color: rgb(64, 166, 41);
-}
-
-
-.contador{
-    width: 20%;
-    height: 50px;
-    font-size: 40px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-}
-
-
-
-.boton{
-    cursor: pointer;    
-}
-
-.cardReserva{
-    background-color: rgb(64, 166, 41);
-    width: 100px;
-    height: 100px;
-    color: white;
-}

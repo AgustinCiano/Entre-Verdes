@@ -21,7 +21,7 @@
         </div>
     </a>
 
-    <div id="cardReserva" class="cardReserva"></div>
+    <div id="cardReserva"></div>
 
     <h2 class="tag">Cabaña de la Asequia</h2>
     <h2 class="tag">Ingresá tus datos</h2>
@@ -30,8 +30,12 @@
         <input name="nombre" type="text" placeholder="Nombre" id="nombre">
         <input name="apellido" type="text" placeholder="Apellido" id="apellido">
         <input name="telefono" type="tel" placeholder="Teléfono" id="telefono">
-        <label name="" for="">Dias de Alquiler</label>
-        <input name="contadorDiasHosp" type="number" class="contador" id="contadorDiasHosp">
+        <!-- <label name="" for="">Dias de Alquiler</label>
+        <input name="contadorDiasHosp" type="number" class="contador" id="contadorDiasHosp"> -->
+        <label name="desde" for="" type="" >Desde</label>
+        <input name="contadorDiasHosp" type="date" class="contador" id="contadorDiasHosp">
+        <label name="desde" for="" type="date" >Hasta</label>
+        <input name="contadorDiasHosp" type="date" class="contador" id="contadorDiasHosp">
         <input name="email" type="email" placeholder="Email" id="email">
         <div class="mascota">
             <p>Venís con tu mascota?</p>
@@ -50,15 +54,10 @@
     </form>
 
     
-    <footer class="footer">
-        <ol>
-            <li class="footerIcon">
-                <a href=""></a>
-            </li>
-            <li class="footerIcon"></li>
-            <li class="footerIcon"></li>
-        </ol>
-    </footer>
+    <div class="headReservas">
+        <h2>Tus Reservas</h2>
+
+    </div>
     
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/formuAsequia.js"></script>
