@@ -9,7 +9,7 @@
 }
 
 
-@media only screen and (min-width: 360px){
+@media only screen and (min-width: 300px){
     body{
         width: auto; 
         max-width: 700px;
@@ -197,7 +197,7 @@
 
     .card a{
         width: 90%;
-        height: 14rem;
+        height: 8rem;
         border-radius: 20px;
         margin: 0 auto 30px auto;
         background-color: rgb(254, 166, 33);
@@ -210,7 +210,7 @@
     
     .card a img{
         width: 50%;
-        height: 80%;
+        height: 70%;
         
         object-fit: cover;
         border-radius: 20px;  
@@ -218,16 +218,16 @@
     
     .card a h2{
         color: black;
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 0;
     }
     
     
     .infoCabana{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
         
         
     }
@@ -237,7 +237,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        font-size: medium;
+        font-size: 14px;
     }
     
     
