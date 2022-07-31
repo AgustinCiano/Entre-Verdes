@@ -210,29 +210,19 @@
     
     .card a img{
         width: 50%;
-        height: 70%;
-        
+        height: 85%;
         object-fit: cover;
         border-radius: 20px;  
     }
     
     .card a h2{
         color: black;
-        font-size: 25px;
-        margin-left: 0;
+        font-size: 25px;   
+        margin-left: 0;     
     }
     
-    
-    .infoCabana{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        
-        
-    }
     .infoCabana li{
-        margin: 5% 0% 1% 0%;
+        margin: 1% 0% 1% 0%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
