@@ -21,7 +21,7 @@ body{
     max-height: 1400px;
     
     
-    border-top: 5px solid rgb(64, 166, 41);
+    
     /* border-top: 5px solid rgb(64, 166, 41);
     border-left: 5px solid rgb(64, 166, 41);
     border-right: 5px solid rgb(64, 166, 41); */    
@@ -31,12 +31,19 @@ body{
     0% {opacity: 0%;}
     100% {opacity: 100%;}
 }
+@keyframes loader {
+    0% {width: 0; border-radius: 100%;}
+    100% {width: 100%; border-radius: 0%;}
+}
 
+.loader{
+    border-top: 5px solid rgb(64, 166, 41);
+    animation: loader 1000ms ease-out 1 ;   
+}
 
 .logoHead img{
     margin: 3% 0 3% 0;
-    width: 50%;
-    
+    width: 50%;    
 }
 
 .logoHead{
@@ -45,7 +52,7 @@ body{
     justify-content: center;
     align-items: center;    
     transform-origin: center;
-    animation: easyIn 500ms ease-out 1;
+    animation: easyIn 500ms ease-out 1;    
 }
 
 .backButon{
@@ -131,7 +138,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 25px; 
+    height: 35px; 
     background-color: rgb(64, 166, 41);
 
     position:fixed; 
