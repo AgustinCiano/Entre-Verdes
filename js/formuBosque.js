@@ -71,8 +71,8 @@ function crearReserva(){
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Ya teneés una reserva a tu nombre, comunicate con la empresa',
-            footer: '<a href="../index.html">Ir a la Página Principal</a>'
+            text: 'Ya tenés una reserva a tu nombre, checkeala en tus Reservas',
+            footer: '<a href="./reservas.html">Ir a Reservas</a>'
         })
     }    
 };

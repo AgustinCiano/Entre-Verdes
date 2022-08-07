@@ -5,27 +5,17 @@
     background-repeat: no-repeat;
     font-family: 'Staatliches', cursive;
     list-style: none;
-    animation: easyIn 500ms ease-out 1;
-    
-    
+    animation: easyIn 500ms ease-out 1;   
 }
 
-@media screen and (min-width: 300px){
+@media screen and (min-width: 300px), (max-width: 499px){
 
 
 
 
 body{
-    width: auto; 
-    
-    height: auto;
-    max-height: 1400px;
-    
-    
-    
-    /* border-top: 5px solid rgb(64, 166, 41);
-    border-left: 5px solid rgb(64, 166, 41);
-    border-right: 5px solid rgb(64, 166, 41); */    
+    width: auto;   
+    height: auto;    
 }
 
 @keyframes easyIn {
@@ -407,20 +397,427 @@ input[type='radio']{
     color: white;
     display: flex;
     font-size: 180%;
-}}
+}
 
 .botonTusReservas{
+        background-color: rgb(64, 166, 41);
+        width: 60%;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: white;
+        display: flex;
+        font-size: 180%;
+    }
+    
+    .headReservas a h2{
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (min-width: 700px){
+
+
+
+
+body{
+    width: 700px;   
+        
+}
+
+@keyframes easyIn {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+@keyframes loader {
+    0% {width: 0; border-radius: 100%;}
+    100% {width: 100%; border-radius: 0%;}
+}
+
+.loader{
+    border-top: 5px solid rgb(64, 166, 41);
+    animation: loader 1000ms ease-out 1 ;   
+}
+
+.logoHead img{
+    margin: 3% 0 3% 0;
+    width: 50%;    
+}
+
+.logoHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    transform-origin: center;
+    animation: easyIn 500ms ease-out 1;    
+}
+
+.backButon{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(254, 166, 33);
+    border-radius: 50px;  
+    display: flex;
+
+    position: inherit;
+    margin: 10px 0 0 10px;
+
+    transition: 200ms;
+    transition-timing-function: ease-in;
+    animation: easyIn 500ms ease-out 1;
+}
+
+.backButon h2{
+    color: white;
+    font-size: 45px;    
+    animation: easyIn 500ms ease-out 1;
+}
+
+.backButon:hover{
+    background-color: rgb(64, 166, 41);
+    transition: 400ms;
+    transition-timing-function: ease-out;
+}
+
+
+.botonIndex{
+    border-radius: 10px;    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(254, 166, 33);
+    transform-origin: 50%;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;   
+    color: white;  
+    transition: 200ms;
+    transition-timing-function: ease-out;
+    animation: easyIn 500ms ease-out 1;
+}
+
+.botonesIndex a div{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.botonIndex:hover{
+    background-color: rgb(64, 166, 41);
+    transition: 400ms;
+    transition-timing-function: ease-out;
+    color: white;
+    transform-origin: 50%;
+}
+
+.botonQs{
+    font-size: 30px;
+    text-align: center;
+    transform-origin: 50%;
+    transition: 200ms;
+    transition-timing-function: ease-out;
+    animation: easyIn 500ms ease-out 1;
+}
+
+.botonQs:hover{
+    background-color: rgb(64, 166, 41);
+    transition: 400ms;
+    transition-timing-function: ease-out;
+    transform-origin: 50%;
+}
+
+
+
+.footer{
+    width: 700px;
+    height: 1px; 
+    background-color: rgb(64, 166, 41);
+
+    /* position:fixed; 
+    width: 400px; 
+    bottom: 0; 
+    z-index:999999; 
+    padding: 2% 0 2% 0;
+    animation: easyIn 500ms ease-out 1;
+    opacity: 90%; */
+}
+
+
+
+
+/* ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  */
+
+/* ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  ALQUILER  */
+
+
+
+
+.logoHeadChico img{
+    width: 25%;
+    margin: 3% 0 3% 0;
+}
+
+.logoHeadChico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    transform-origin: center;
+    animation: easyIn 500ms ease-out 1;
+}
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0% auto 3% auto;
+    font-size: 40px;
+    animation: easyIn 500ms ease-out 1;
+}
+.tagChico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    font-size: 20px;
+    animation: easyIn 500ms ease-out 1;
+}
+
+.botonFiltroAlq{
+    border-radius: 10px;    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(254, 166, 33);
+    transform-origin: 50%;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;   
+    color: white;  
+    transition: 200ms;
+    transition-timing-function: ease-out;
+    
+    animation: easyIn 500ms ease-out 1;
+}
+
+
+
+.botonFiltroAlq{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.botonFiltroAlq:hover{
+    background-color: rgb(64, 166, 41);
+    transition: 400ms;
+    transition-timing-function: ease-out;
+    color: white;
+    transform-origin: 50%;
+}
+
+.card a{
+    width: 80%;
+    height: 11rem;
+    border-radius: 20px;
+    margin: 0 auto 30px auto;
+    background-color: rgb(254, 166, 33);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;    
+    animation: easyIn 500ms ease-out 1;
+
+}
+
+.card a img{
+    width: 50%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 20px;  
+    animation: easyIn 500ms ease-out 1;
+}
+
+.card a h2{
+    color: black;
+    font-size: 40px;   
+    margin-left: 0;   
+    animation: easyIn 500ms ease-out 1;  
+}
+
+.infoCabana li{
+    margin: 1% 0% 1% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+    animation: easyIn 500ms ease-out 1;
+}
+
+
+.infoCabana{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: black;
+    animation: easyIn 500ms ease-out 1;
+}
+
+
+
+
+
+/* FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  */
+/* FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  FORMULARIO  */
+
+
+.formulario{
+    width: 50%;
+    height: 500px;
+    
+    border-radius: 20px;
+    
+    background-color: rgb(254, 166, 33);
+    padding-top: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 20px;
+    animation: easyIn 500ms ease-out 1;
+
+}
+
+
+
+.botonSubmit{    
+    border-radius: 10px;    
+    width: 100px;
+    height: 50px;
+    background-color: rgb(64, 166, 41);
+    transform-origin: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;   
+    color: white;  
+    transition: 200ms;
+    transition-timing-function: ease-out;
+    margin: 5% auto 5%;
+}
+.botonLimpiar{    
+    border-radius: 10px;    
+    width: 30%;
+    height: 30px;
+    background-color: rgb(255, 69, 69);
+    transform-origin: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;   
+    color: white;  
+    transition: 200ms;
+    transition-timing-function: ease-out;
+    margin: 0 auto 5%;
+    text-align: center;
+}
+
+.mascota input{
+    margin-right: 20%;
+    margin-left: 2%;
+}
+
+.formulario input{
+    margin-bottom: 5%;    
+}
+
+
+input[type='radio']{
+    accent-color: rgb(64, 166, 41);
+}
+
+
+.contador{
+    width: 20%;
+    height: 50px;
+    font-size: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+
+.boton{
+    cursor: pointer;    
+}
+
+.cardReserva{
+    padding: 4%;
+    margin-bottom: 2%;
+    background-color: rgb(64, 166, 41);
+    width: 40%;
+
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.cardReservaNull{
+    padding: 4%;
+    margin-bottom: 2%;
     background-color: rgb(64, 166, 41);
     width: 60%;
+
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    
+}
+
+.botonReservas{
+    background-color: rgb(64, 166, 41);
+    width: 70%;
     height: 60px;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 20px;
     color: white;
     display: flex;
     font-size: 180%;
 }
 
+.botonTusReservas{
+        background-color: rgb(64, 166, 41);
+        width: 60%;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: white;
+        display: flex;
+        font-size: 180%;
+}
+    
 .headReservas a h2{
-    text-decoration: none;
+        text-decoration: none;
+}
 }
