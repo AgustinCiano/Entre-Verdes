@@ -413,7 +413,13 @@ input[type='radio']{
     
     .headReservas a h2{
         text-decoration: none;
-    }
+}
+
+.qS{
+    width: 70%;
+}
+
+
 }
 
 
@@ -720,7 +726,7 @@ body{
 .botonLimpiar{    
     border-radius: 10px;    
     width: 30%;
-    height: 30px;
+    height: 40px;
     background-color: rgb(255, 69, 69);
     transform-origin: 50%;
 
@@ -820,4 +826,9 @@ input[type='radio']{
 .headReservas a h2{
         text-decoration: none;
 }
+
+.qS{
+    width: 70%;
+}
+
 }
