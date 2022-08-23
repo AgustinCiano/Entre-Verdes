@@ -1,5 +1,5 @@
 
-const lista = document.getElementById("lista");
+/* const lista = document.getElementById("lista");
 
 fetch('https://jsonplaceholder.typicode.com/posts')
 .then(response => response.json())
@@ -14,4 +14,5 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         `;
         lista.append(li);
     });
-});
+}); */
+

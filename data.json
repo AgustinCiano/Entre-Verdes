@@ -1,0 +1,5 @@
+[
+    {"id": 1, "nombreCabana": "De la Asequia", "capacidad": "8", "precio": "8000"},
+    {"id": 2, "nombreCabana": "Del Bosque", "capacidad": "6", "precio": "6000"},
+    {"id": 3, "nombreCabana": "Del Mirador", "capacidad": "4","precio": "4000"}
+]
