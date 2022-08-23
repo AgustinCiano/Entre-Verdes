@@ -1,9 +1,9 @@
 
 
+let cabanaElegida = JSON.parse(localStorage.getItem("cabana")).filter(elemento => elemento.id == localStorage.getItem("idCabanaElegida"));
 
 
-
-    if(localStorage.getItem('nombre') === null){
+if(localStorage.getItem('nombre') === null){
         let cardReserva = document.createElement("div");
         cardReserva.classList.add("cardReservaNull")
         cardReserva.innerHTML = `
@@ -11,22 +11,27 @@
             
         document.body.append(cardReserva);
 
-    }else{
+}else{
+    for(const cabana of cabanaElegida){
+        
         let cardReserva = document.createElement("div");
         cardReserva.classList.add("cardReserva")
         cardReserva.innerHTML = `
-        <h2>Cabaña ${localStorage.getItem("cabaña")}</h2>
+        <h2>Cabaña ${cabana.nombreCabana}</h2>
         <p>A nombre de: ${localStorage.getItem("nombre")} ${localStorage.getItem("apellido")}</p>
         <p>Telefono: ${localStorage.getItem("telefono")}</p>
         <p>Email: ${localStorage.getItem("email")}</p>
-        <p>Capacidad: ${JSON.parse(localStorage.getItem("cantPers"))} personas</p>
+        <p>Capacidad: ${cabana.capacidad} personas</p>
         <p>Mascota: ${localStorage.getItem("mascota")}</p>
-        <p>Precio por dia: $${JSON.parse(localStorage.getItem("precioDia"))}<p/>
-        <p>Cantidad de días: ${JSON.parse(localStorage.getItem("cantDias"))}<p/>
-        <p>Precio estadía: $${JSON.parse(localStorage.getItem("precioDia")) * JSON.parse(localStorage.getItem("cantDias"))}<p/>`;
-            
+        <p>Precio por dia: $${cabana.precio}<p/>
+        <p>Cantidad de días: ${localStorage.getItem("cantDias")}<p/>
+        <p>Precio estadía: $${cabana.precio * localStorage.getItem("cantDias")}<p/>`;
+        
         document.body.append(cardReserva);
     }
+
+
+};
        
 
 

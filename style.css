@@ -76,7 +76,7 @@ body{
 
 .botonIndex{
     border-radius: 10px;    
-    width: 130px;
+    width: 160px;
     height: 60px;
     background-color: rgb(254, 166, 33);
     transform-origin: 50%;
@@ -121,8 +121,6 @@ body{
     transition-timing-function: ease-out;
     transform-origin: 50%;
 }
-
-
 
 .footer{
     display: flex;
@@ -314,7 +312,7 @@ body{
 .botonLimpiar{    
     border-radius: 10px;    
     width: 30%;
-    height: 30px;
+    height: 40px;
     background-color: rgb(255, 69, 69);
     transform-origin: 50%;
 

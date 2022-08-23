@@ -16,22 +16,23 @@
         <img src="../archivos/Entre Verdes IsoLogo horiz.png" alt="">
     </header>
     
-    <a href="./filtroAlquiler.html">
+    <a href="./selecCabana.html">
         <div  class="backButon">
             <h2><</h2>
         </div>
     </a>
 
-    <h2 class="tagChico">Ingresá tus datos para la reserva</h2>
-    <h2 class="tag">Cabaña del Bosque</h2>
+    <div id="cardReserva"></div>
+
+    <h2 class="tag">Ingresá tus datos para la reserva</h2>
 
     <form action="" class="formulario">
-        <input name="nombre" type="text" placeholder="Nombre" id="nombre">
-        <input name="apellido" type="text" placeholder="Apellido" id="apellido">
-        <input name="telefono" type="tel" placeholder="Teléfono" id="telefono">
+        <input name="nombre" type="text" placeholder="Nombre" id="nombre" size="15" class="input">
+        <input name="apellido" type="text" placeholder="Apellido" id="apellido" size="15" class="input">
+        <input name="telefono" type="tel" placeholder="Teléfono" id="telefono" size="15" class="input">
         <label name="" for="">Dias de Alquiler</label>
         <input name="contadorDiasHosp" type="number" class="contador" id="contadorDiasHosp">
-        <input name="email" type="email" placeholder="Email" id="email">
+        <input name="email" type="email" placeholder="Email" id="email" size="15" class="input">
         <div class="mascota">
             <p>Venís con tu mascota?</p>
             Si<input type="radio" name="radioMascota" value="Si" size="15" class="input" id="mascota">
@@ -39,18 +40,20 @@
             No<input type="radio" name="radioMascota" value="No" size="15" class="input" id="mascota">
         </div>
         
-        <div class="boton botonSubmit" id="submitBosque">
+        <div class="boton botonSubmit" id="submit">
             <h2>Enviar</h2>
         </div>               
     </form>
 
+    
+    
     <div>
-        <a href="../htmls/reservas.html" class="botonReservas">
-            <h2>Tu Reserva</h2>
+        <a href="../htmls/tusReservas.html" class="botonReservas">
+            <h2>Tus Reservas</h2>
         </a>
     </div>
     
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/formuBosque.js"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 </html>
