@@ -1,14 +1,10 @@
 
-
-
-
-
-
 if(localStorage.getItem('nombre') === null){
     let cardReserva = document.createElement("div");
     cardReserva.classList.add("cardReservaNull")
         cardReserva.innerHTML = `
-        <div>
+        <div>        
+        <h2> No tenés reservas
         <a href="../htmls/selecCabana.html" class="boton">
             <h2>Ir a Alquiler</h2>
         </a>
@@ -38,10 +34,6 @@ if(localStorage.getItem('nombre') === null){
 
 
 };
-       
-
-
-
 
 let botonLimpiar = document.getElementById("limpiarFormu")
 

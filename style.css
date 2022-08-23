@@ -80,6 +80,7 @@ body{
     height: 60px;
     background-color: rgb(254, 166, 33);
     transform-origin: 50%;
+    text-align: center;
     
 
     display: flex;

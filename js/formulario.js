@@ -1,21 +1,11 @@
 
-
-
-
-
 let cabanaElegida = JSON.parse(localStorage.getItem("cabana")).filter(elemento => elemento.id == localStorage.getItem("idCabanaElegida"));
-
-
-
 
 let cardReserva = document.getElementById("cardReserva")
 
 let submit = document.getElementById("submit");
 
-
-
 submit.addEventListener("click", crearReserva);
-
 
 function crearReserva(){
     if(localStorage.getItem('nombre') === null){
